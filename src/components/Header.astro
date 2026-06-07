@@ -12,8 +12,8 @@ import { Image } from 'astro:assets';
 				<Image src={logoImg} alt={SITE_TITLE} width={150} height={150} class="logo-img" />
 			</a>
 			<div class="slogan">
-				<span class="slogan-main" style="color: #27ae60;">Discover Brazil</span>
-				<span class="slogan-sub" style="color: #f1c40f;">Tourism Guide</span>
+				<span class="slogan-main" style="color: #009c3b;">Discover Brazil News</span>
+				<span class="slogan-sub" style="color: #ffdf00;">Miguel do Rosário</span>
 			</div>
 		</div>
 		<div class="nav-links">
@@ -28,29 +28,18 @@ import { Image } from 'astro:assets';
             <div class="nav-item dropdown">
                 <button class="dropbtn">Experiences <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
                 <div class="dropdown-content">
-                    <a href="/tags/geotourism" class="submenu-title" style="text-decoration: none; display: block;">Geotourism</a>
                     <a href="/tags/forest" class="submenu-title" style="text-decoration: none; display: block;">Forest & Nature</a>
                     <a href="/tags/ecology" class="submenu-title" style="text-decoration: none; display: block;">Ecotourism</a>
                     <a href="/tags/city" class="submenu-title" style="text-decoration: none; display: block;">City Life</a>
-                    <a href="/tags/culture" class="submenu-title" style="text-decoration: none; display: block;">Culture & Shows</a>
-					<div class="dropdown-submenu">
-						<span class="submenu-title">Food <span>▶</span></span>
-						<div class="submenu-content">
-							<a href="/food">Brazil Food Guide</a>
-							<a href="/food/rio-de-janeiro">Rio de Janeiro</a>
-							<a href="/food/sao-paulo">Sao Paulo</a>
-							<a href="/food/salvador">Salvador</a>
-							<a href="/food/belem">Belem</a>
-							<a href="/food/belo-horizonte">Belo Horizonte</a>
-						</div>
-					</div>
+                    <a href="/tags/bohemia" class="submenu-title" style="text-decoration: none; display: block;">Bohemia & Culture</a>
+                    <a href="/tags/shows" class="submenu-title" style="text-decoration: none; display: block;">Shows & Events</a>
                 </div>
             </div>
             <div class="nav-item dropdown">
-                <button class="dropbtn">Regions & More <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
+                <button class="dropbtn">Regions <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></button>
                 <div class="dropdown-content">
 					<div class="dropdown-submenu">
-						<span class="submenu-title">Regions <span>▶</span></span>
+						<span class="submenu-title">Macro Regions <span>▶</span></span>
 						<div class="submenu-content">
 							<a href="/tags/northeast">Northeast</a>
 							<a href="/tags/southeast">Southeast</a>
@@ -59,26 +48,51 @@ import { Image } from 'astro:assets';
 							<a href="/tags/central-west">Central-West</a>
 						</div>
 					</div>
+					<!-- Região dos Lagos -->
 					<div class="dropdown-submenu">
-						<span class="submenu-title">Services <span>▶</span></span>
+						<span class="submenu-title">Região dos Lagos <span>▶</span></span>
 						<div class="submenu-content">
-							<a href="/tags/emergency-numbers">Emergency Numbers</a>
-							<a href="/tags/hospitals">Hospitals & Clinics</a>
-							<a href="/tags/tourist-police">Tourist Police</a>
-							<a href="/tags/embassies">Embassies & Consulates</a>
+							<a href="/tags/cabo-frio">Cabo Frio</a>
+							<a href="/tags/buzios">Búzios</a>
+							<a href="/tags/arraial-do-cabo">Arraial do Cabo</a>
 						</div>
 					</div>
+					<!-- Norte Fluminense -->
 					<div class="dropdown-submenu">
-						<span class="submenu-title">Media & Stays <span>▶</span></span>
+						<span class="submenu-title">Norte Fluminense <span>▶</span></span>
 						<div class="submenu-content">
-							<a href="/tags/photos">Photos</a>
-							<a href="/tags/videos">Videos</a>
-							<a href="/tags/hotels">Hotels & Resorts</a>
-							<a href="/tags/airbnb">Airbnb & Rentals</a>
+							<a href="/tags/campos">Campos dos Goytacazes</a>
+							<a href="/tags/macae">Macaé</a>
+						</div>
+					</div>
+					<!-- Sul Fluminense -->
+					<div class="dropdown-submenu">
+						<span class="submenu-title">Sul Fluminense <span>▶</span></span>
+						<div class="submenu-content">
+							<a href="/tags/volta-redonda">Volta Redonda</a>
+							<a href="/tags/resende">Resende</a>
+						</div>
+					</div>
+					<!-- Serrana -->
+					<div class="dropdown-submenu">
+						<span class="submenu-title">Região Serrana <span>▶</span></span>
+						<div class="submenu-content">
+							<a href="/tags/petropolis">Petrópolis</a>
+							<a href="/tags/teresopolis">Teresópolis</a>
+							<a href="/tags/nova-friburgo">Nova Friburgo</a>
+						</div>
+					</div>
+					<!-- Costa Verde -->
+					<div class="dropdown-submenu">
+						<span class="submenu-title">Costa Verde <span>▶</span></span>
+						<div class="submenu-content">
+							<a href="/tags/angra-dos-reis">Angra dos Reis</a>
+							<a href="/tags/paraty">Paraty</a>
 						</div>
 					</div>
                 </div>
             </div>
+					<HeaderLink href="#">Mapa Rio <span class="badge">em construção</span></HeaderLink>
 		</div>
 	</nav>
 </header>
